@@ -59,6 +59,12 @@ async function checkWeather(city) {
         weathericon.src = "images/snow.png"
     }
 }
-searchicon.addEventListener("click", () => {
+searchicon.addEventListener("click", (e) => {
     checkWeather(searchbox.value)
+})
+
+window.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter" && searchbox.value){
+        checkWeather(searchbox.value)
+    }
 })

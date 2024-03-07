@@ -6,12 +6,14 @@
 }
 body{
     background-color: black;
+    width: 100%;
+    min-height: 100lvh;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 .card{
-    width: 90%;
+    width: 100%;
     max-width: 470px;
     text-align: center;
     display: flex;
@@ -27,6 +29,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .search input{
     border: 0;
@@ -39,15 +42,18 @@ body{
     font-size: 18px;
     border-radius: 30px;
     margin-right: 16px;
+    width: 100%;
 }
 .search button{
     border: 0;
     outline: 0;
     border-radius: 50%;
-    background: #ebfffc;
+    background: transparent;
     width: 50px;
     height: 50px;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 i{
     font-size: 1.5rem;
